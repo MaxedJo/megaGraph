@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="722.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.example.megagraph.HelloController">
+    <Slider fx:id="sld1" layoutX="551.0" layoutY="30.0" min="-100.0" />
+    <Slider fx:id="sld2" layoutX="551.0" layoutY="57.0" min="-100.0" />
+    <Slider fx:id="sld3" layoutX="553.0" layoutY="79.0" min="-100.0" />
+    <Slider fx:id="sld4" layoutX="551.0" layoutY="117.0" max="180.0" />
+    <Canvas fx:id="mainCanvas" height="453.0" layoutX="14.0" layoutY="12.0" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed" width="527.0" />
+   <Group fx:id="group" layoutX="277.0" layoutY="239.0" />
+   <Text layoutX="606.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move" />
+   <Text layoutX="606.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rotate" />
+   <Slider fx:id="sld5" layoutX="553.0" layoutY="139.0" max="180.0" />
+   <Slider fx:id="sld6" layoutX="553.0" layoutY="161.0" max="180.0" />
+   <Button fx:id="scale" layoutX="553.0" layoutY="262.0" mnemonicParsing="false" onAction="#onScale" text="Scale" />
+   <Text layoutX="591.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scale" wrappingWidth="30.399999999999864" />
+   <Slider fx:id="scale1" layoutX="551.0" layoutY="198.0" max="4.0" min="-4.0" value="1.0" />
+   <Slider fx:id="scale2" layoutX="553.0" layoutY="212.0" max="4.0" min="-4.0" value="1.0" />
+   <Slider fx:id="scale3" layoutX="553.0" layoutY="232.0" max="4.0" min="-4.0" value="1.0" />
+   <Button layoutX="658.0" layoutY="262.0" mnemonicParsing="false" onAction="#onClear" text="Clear" />
+   <Button fx:id="scale4" layoutX="600.0" layoutY="262.0" mnemonicParsing="false" onAction="#onMove" text="Move" />
+   <Button fx:id="scale5" layoutX="546.0" layoutY="299.0" mnemonicParsing="false" onAction="#onMX" text="MirrorX" />
+   <Button fx:id="scale6" layoutX="613.0" layoutY="299.0" mnemonicParsing="false" onAction="#onMY" text="MirrorY" />
+   <Button fx:id="scale7" layoutX="578.0" layoutY="332.0" mnemonicParsing="false" onAction="#onMZ" text="MirrorZ" />
+</AnchorPane>
